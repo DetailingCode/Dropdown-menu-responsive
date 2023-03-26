@@ -14,6 +14,72 @@ html {
 body {
   color: #ffffff;
   min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
-  background-color: #333;
+  font-family: "Poppins", sans-serif;
+  background-color: #c9c9c9;
+}
+
+.nav-logo {
+  float: left;
+  width: 150px;
+  height: 75px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+nav .nav-link {
+  padding: 0 10px;
+  padding-top: 1em;
+}
+nav ul {
+  float: right;
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  background: #f2f2f2;
+  margin: 0 5px;
+  font-weight: bold;
+}
+nav ul li:hover > ul {
+  top: 6em;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 4em;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: coral;
+}
+nav ul li ul {
+  position: absolute;
+  top: 7em;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+nav ul li ul li {
+  position: relative;
+  width: 190px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #000;
+}
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
 }/*# sourceMappingURL=main.css.map */
