@@ -83,6 +83,59 @@ nav:after {
   display: table;
 }
 
-.show, input {
+.show, .icon, input {
   display: none;
+}
+
+@media (max-width: 992px) {
+  nav ul {
+    margin-right: 0;
+    float: left;
+  }
+  nav ul a:hover {
+    box-shadow: none;
+  }
+  nav ul ul {
+    top: 70px;
+    position: static;
+    float: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav .nav-logo {
+    width: 50%;
+    height: auto;
+  }
+  nav ul li, nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  .show {
+    display: block;
+    color: #000;
+    font-size: 1.6rem;
+    padding: 0 2em;
+    cursor: pointer;
+    line-height: 70px;
+  }
+  .show:hover {
+    color: coral;
+  }
+  .icon {
+    display: block;
+    color: #000;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    line-height: 70px;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .show + a, ul {
+    display: none;
+  }
+  [id^=btn]:checked + ul {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
